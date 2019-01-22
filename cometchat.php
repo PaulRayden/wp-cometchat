@@ -3,7 +3,7 @@
 /**
 * Plugin Name: CometChat
 * Description: Voice, video & text chat for your WordPress site
-* Version: 7.27.1
+* Version: 7.27.2
 * Author: CometChat
 * Author URI: https://www.cometchat.com/
 */
