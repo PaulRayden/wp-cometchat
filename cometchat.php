@@ -8,6 +8,15 @@
 * Author URI: https://www.cometchat.com/
 */
 
+require 'plugin_update_check.php';
+
+$KernlUpdater = new PluginUpdateChecker_2_0 (
+    'https://kernl.us/api/v1/updates/5c46be053068390d7de8223d/',
+    __FILE__,
+    'cometchat',
+    1
+);
+
 include_once(ABSPATH.'wp-admin'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'plugin.php');
 
 global $cc_clientid,$cc_old_client;
