@@ -1,5 +1,6 @@
 <?php
 	wp_enqueue_style("ccadmin", plugin_dir_url( __FILE__ ).'css/comet-ready.css');
+	wp_enqueue_script("ccevent", plugin_dir_url( __FILE__ ).'js/event.js');
 ?>
 
 <!DOCTYPE html>
@@ -17,8 +18,8 @@
 				<p style="font-weight: 700;">CometChat has been successfully installed on your site. </p>
 				<p>We have pre-enabled our Docked Layout for your convenience. </p>
 				<div>
-					<button type="submit" value = "submit" id = "save" class = "button-primary" onclick="window.open('<?php echo $adminpanelurl; ?>');">Launch Admin Panel</button>
-					<button type="submit" value = "submit" id = "save" class = "button-primary" onclick="window.location.reload();">Go To Settings</button>
+					<button type="submit" value = "submit" id = "save" class = "button-primary" onclick="cometGOPanel('<?php echo $adminpanelurl; ?>');">Launch Admin Panel</button>
+					<button type="submit" value = "submit" id = "save" class = "button-primary" onclick="cometGoSettings();">Go To Settings</button>
 				</div>
 			</div>
 		</div>

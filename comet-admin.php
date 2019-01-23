@@ -1,5 +1,6 @@
 <?php
 	wp_enqueue_style("ccadmin", plugin_dir_url( __FILE__ ).'css/comet-admin.css');
+	wp_enqueue_script("ccevent", plugin_dir_url( __FILE__ ).'js/event.js');
 	wp_enqueue_script("comet-admin", plugin_dir_url( __FILE__ ).'js/comet-admin.js');
 
 	$isBuddyPressActive = '';
@@ -28,7 +29,7 @@
 						To Change the layout or further customize cometchat please visit admin panel.
 					</p>
 					<p style="margin-top: 20px;">
-						<button type="button" class="button-primary" onclick="window.open('<?php echo $adminpanelurl; ?>');">
+						<button type="button" class="button-primary" onclick="cometGOPanel('<?php echo $adminpanelurl; ?>');">
 							Launch Admin Panel
 						</button>
 					</p>
